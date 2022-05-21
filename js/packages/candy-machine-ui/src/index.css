@@ -12,3 +12,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.mint-container {
+  background-image: url('./images/forestbg.png');
+  /* margin-top: 40px; */
+  margin-bottom: 40px;
+  padding-top: 150px; 
+  padding-bottom: 100px;
+  height:75%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.solmerians-heading {
+  align-self: center;
+  margin-bottom: 20px;
+  text-align:center;
+
+}
+
+.mint-row {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.solmerian-card-left {
+  margin-right: 60px;
+}
+
+.solmerian-card-right {
+  margin-left: 60px;
+}
+
+.solmerian-card {
+  margin-bottom: 20px;
+}
+.heading-text {
+  text-align: center;
+  color: white;
+  font-size: 34px;
+  margin-top: 20px;
+  font-weight: 600;;
+}
+          

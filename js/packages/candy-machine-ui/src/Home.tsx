@@ -477,14 +477,27 @@ const Home = (props: HomeProps) => {
   }, [refreshCandyMachineState]);
 
   return (
-    <Container style={{ marginTop: 100 }}>
-      <Container maxWidth="xs" style={{ position: 'relative' }}>
+    <div className="mint-container">
+    <Container style={{ maxWidth:"none" }}>
+      <Container style={{ position: 'relative',maxWidth:"none" }}>
+        <div className="solmerians-heading">
+          <img src="sol-logo.png" alt="Solmerians Logo" style={{width: '600px'}}/>
+        </div>
+        <div className='mint-row'>
+          <div className="solmerian-card-left">
+          <img className="solmerian-card" src='solmerianA.png' alt="Solmerian Character Example"/>
+          {/* <img className="solmerian-card" src='solmerianB.png' alt="Solmerian Character Example"/> */}
+        
+        </div>
+
         <Paper
           style={{
             padding: 24,
+            minWidth:"312px",
             paddingBottom: 10,
             backgroundColor: '#151A1F',
             borderRadius: 6,
+            height:"180px"
           }}
         >
           {!wallet.connected ? (
@@ -702,8 +715,13 @@ const Home = (props: HomeProps) => {
             Powered by METAPLEX
           </Typography>
         </Paper>
+        <div className="solmerian-card-right">
+      <img className="solmerian-card" src='solmerianD.png' alt="Solmerian Character Example"/>
+      </div>
+        </div>
+        
       </Container>
-
+      
       <Snackbar
         open={alertState.open}
         autoHideDuration={
@@ -719,6 +737,7 @@ const Home = (props: HomeProps) => {
         </Alert>
       </Snackbar>
     </Container>
+    </div>
   );
 };
 
